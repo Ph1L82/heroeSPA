@@ -14,12 +14,12 @@ export const HeroPage = () => {
     }
     return (
 
-        <div className="row mt-5">
+        <div className="row mt-5 animate__animated animate__fadeInRight">
             <div className="col-4">
                 <img src={`/assets/${heroID}.jpg`} alt={hero.superhero} className="img-thumbnail" />
             </div>
             <div className="col-8">
-                <h3>{hero.superhero}</h3>
+                <h3 className="animate__animated animate__bounceInLeft animate__delay-1s">{hero.superhero}</h3>
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item"><b>Alter ego: </b>{hero.alter_ego}</li>
                     <li className="list-group-item"><b>Publisher: </b>{hero.publisher}</li>
